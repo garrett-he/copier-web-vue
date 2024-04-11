@@ -1,0 +1,5 @@
+---
+node_version:
+  type: str
+  help: "Node version to use:"
+  default: "22.13.1"

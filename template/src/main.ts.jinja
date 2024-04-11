@@ -1,0 +1,14 @@
+import {createApp} from "vue";
+import App from "./App.vue";
+
+import router from "./router";
+{% if with_vuex %}
+import store from "./store";
+{% endif %}
+
+createApp(App)
+    .use(router)
+    {% if with_vuex %}
+    .use(store)
+    {% endif %}
+    .mount("#app");

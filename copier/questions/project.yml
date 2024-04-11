@@ -29,3 +29,8 @@ project_version:
 project_keywords:
   type: str
   help: "Keywords of this project:"
+
+project_private:
+  type: bool
+  help: "Whether project is private?"
+  default: True

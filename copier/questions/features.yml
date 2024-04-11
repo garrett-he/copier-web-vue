@@ -1,0 +1,5 @@
+---
+with_vuex:
+  type: bool
+  help: "Enable vuex?"
+  default: True

@@ -1,0 +1,36 @@
+{
+    "name": "{{ project_name }}",
+    "version": "{{ project_version }}",
+    "description": "{{ project_description }}",
+    "private": {{ project_private | lower }},
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite --host",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/{{ vcs_github_path }}.git"
+    },
+    "keywords": [
+        "{{ project_keywords.split(',')|join('",\n"') }}"
+    ],
+    "author": "{{ copyright_holder_name }} <{{ copyright_holder_email }}>",
+    "license": "{{ copyright_license }}",
+    "bugs": {
+        "url": "https://github.com/{{ vcs_github_path }}/issues"
+    },
+    "homepage": "https://github.com/{{ vcs_github_path }}#readme",
+    "dependencies": {
+        "vue": "^3.4.21",
+        "vue-router": "^4.3.0"
+        {% if with_vuex %},
+        "vuex": "^4.1.0"
+        {% endif %}
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^5.0.4",
+        "typescript": "^5.4.4",
+        "vite": "^5.2.8"
+    }
+}
