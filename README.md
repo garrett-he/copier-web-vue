@@ -1,6 +1,9 @@
 # copier-web-vue
 
-A Copier template for web application with Vue.js framework.
+![license](https://img.shields.io/github/license/garrett-he/copier-web-vue)
+![test](https://img.shields.io/github/actions/workflow/status/garrett-he/copier-web-vue/test.yml)
+
+A [Copier][1] template for web application with [Vue.js][2] framework.
 
 ## Quickstart
 
@@ -19,3 +22,7 @@ A Copier template for web application with Vue.js framework.
 Copyright (C) 2024 Garrett HE <garrett.he@outlook.com>
 
 The BSD 3-Clause License, see [LICENSE](./LICENSE).
+
+[1]: https://github.com/copier-org/copier
+
+[2]: https://vuejs.org/
